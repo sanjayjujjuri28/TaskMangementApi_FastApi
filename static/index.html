@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Task Manager</h1>
+            <p>Manage your tasks with FastAPI + PostgreSQL</p>
+        </header>
+
+
+        <section class="task-form">
+
+            <h2>Add New Task</h2>
+
+            <form id="taskForm">
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Task title"
+                    required
+                >
+
+                <textarea
+                    id="description"
+                    placeholder="Task description"
+                ></textarea>
+
+                <button type="submit">
+                    Add Task
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section class="tasks-section">
+
+            <div class="tasks-header">
+                <h2>Your Tasks</h2>
+
+                <button id="refreshButton">
+                    Refresh
+                </button>
+            </div>
+
+            <div id="taskList">
+                <!-- Tasks will be inserted here -->
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

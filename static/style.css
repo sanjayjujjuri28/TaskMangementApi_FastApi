@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+
+header p {
+    color: #666;
+}
+
+
+
+/* =========================================
+   FORM AND TASK SECTION
+========================================= */
+
+.task-form,
+.tasks-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.task-form h2,
+.tasks-section h2 {
+    margin-bottom: 20px;
+}
+
+
+
+/* =========================================
+   FORM
+========================================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+button {
+    border: none;
+
+    padding: 11px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    background: #222;
+
+    color: white;
+}
+
+
+button:hover {
+    opacity: 0.85;
+}
+
+
+
+/* =========================================
+   TASK HEADER
+========================================= */
+
+.tasks-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+
+
+/* =========================================
+   TASK CARD
+========================================= */
+
+.task-card {
+
+    border: 1px solid #e5e5e5;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    margin-bottom: 12px;
+
+    background: white;
+}
+
+
+.task-card h3 {
+
+    margin-bottom: 8px;
+
+}
+
+
+.task-card p {
+
+    color: #666;
+
+    margin-bottom: 12px;
+
+}
+
+
+
+/* =========================================
+   TASK BUTTONS
+========================================= */
+
+.task-actions {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 15px;
+
+}
+
+
+.edit-btn {
+
+    background: #555;
+
+}
+
+
+.delete-btn {
+
+    background: #d93025;
+
+}
+
+
+
+/* =========================================
+   COMPLETED TASK
+========================================= */
+
+.completed {
+
+    text-decoration: line-through;
+
+    color: #888;
+
+}
+
+
+
+/* =========================================
+   EDIT FORM
+========================================= */
+
+.edit-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+.edit-form h3 {
+
+    margin-bottom: 5px;
+
+}
+
+
+.edit-form label {
+
+    font-weight: bold;
+
+}
+
+
+.edit-form input[type="text"],
+.edit-form textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+}
+
+
+.edit-form textarea {
+
+    min-height: 90px;
+
+}
+
+
+.checkbox-label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.checkbox-label input {
+
+    width: auto;
+
+}
